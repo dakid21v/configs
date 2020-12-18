@@ -1,0 +1,19 @@
+[user]
+	email = dakid21v@gmail.com
+	name = dakid21v
+[core]
+	editor = code
+[diff]
+  tool = bcompare
+[difftool]
+  prompt = false
+[difftool "bcompare"]
+  trustExitCode = true
+  cmd = "bcompare" \"$LOCAL\" \"$REMOTE\"
+[merge]
+  tool = bcompare
+[mergetool]
+  prompt = false
+[mergetool "bcompare"]
+  trustExitCode = true
+  cmd = "bcompare" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
